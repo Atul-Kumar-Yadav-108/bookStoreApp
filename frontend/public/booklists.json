@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Educational book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 90,
+    "category": "Educational",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 2,
+    "title": "Stroy book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "free",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 3,
+    "title": "Creative book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "free",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 4,
+    "title": "Comedy book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "Entertainment",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 5,
+    "title": "Math book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "free",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 6,
+    "title": "Rhym book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "free",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 7,
+    "title": "Nature book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 120,
+    "category": "Nature",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 8,
+    "title": "Space book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 0,
+    "category": "free",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 9,
+    "title": "Sport book",
+    "description": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magnam autem quos esse saepe.",
+    "price": 50,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D"
+  }
+]
