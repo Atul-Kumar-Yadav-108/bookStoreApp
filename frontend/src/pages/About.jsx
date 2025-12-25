@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
         <Navbar/>
-            <div className="min-h-screen dark:bg-black dark:text-white flex justify-between items-center">
+            <div className="min-h-screen dark:bg-black dark:text-white flex justify-center items-center">
                 <div className="about-section md:min-w-100 p-3">
                         <h1 className="text-2xl font-bold text-center">
                             About us
