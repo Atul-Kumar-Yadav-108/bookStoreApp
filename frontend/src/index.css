@@ -17,3 +17,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.Toastify__toast {
+  z-index: 9999 !important;
+}

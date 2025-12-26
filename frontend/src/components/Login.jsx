@@ -1,19 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import InputText from './InputText'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Signup from './Signup';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { useAuth } from '../context/AuthProvider';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+  const [authUser, setAuthUser] = useAuth();
+  const navigate = useNavigate();
   const clearInput = ()=>{
     setEmail("");
     setPassword("");
   }
-  const handleSubmit = (e)=>{
+  const handleSubmit = async(e)=>{
       e.preventDefault();
-      console.log(email, password);
+      try {
+        const res = await axios.post("http://localhost:4000/user/login",{email, password});
+        if(res?.data){
+          const initialuser = localStorage.setItem("users",JSON.stringify(res?.data?.user));
+          setAuthUser(res?.data?.user);
+          setTimeout(()=>{
+            toast.success(`Welcome ${res?.data?.user?.fullname}`);
+          },500)
+          navigate("/course");
+          document.getElementById('my_modal_1')?.close()
+        }
+      } catch (error) {
+        console.error("error : ",error);
+        toast.error(error.response?.data?.message);
+      }
+      // console.log(email, password);
   }
   return (
     <><dialog id="my_modal_1" className="modal" onClose={clearInput}>

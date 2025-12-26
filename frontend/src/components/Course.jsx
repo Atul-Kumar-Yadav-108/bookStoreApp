@@ -2,10 +2,27 @@ import React from 'react'
 import bookLists from "../../public/booklists.json"
 import Card from './Card';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Course = () => {
     // const books = bookLists.filter((book)=> book.category !== "free");
+    const [books, setBooks] = useState([]);
     
+    useEffect(()=>{
+        try {
+            const getBook = async()=>{
+                const res = await axios.get('http://localhost:4000/book');
+                // console.log("bahut ssare result ",res.data);
+                setBooks(res.data);
+            }
+            getBook()
+        } catch (error) {
+            console.log(error);
+        }
+    },[])
+    // console.log("books hai ye",books);
   return (
     <>
         <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
@@ -18,7 +35,7 @@ const Course = () => {
                 </div>
                 <div className='mt-12 grid grid-cols-1 md:grid-cols-4 '>
                     {
-                        bookLists.map((book)=>{
+                        books.map((book)=>{
                             return <Card item={book} key={book.id}/>
                         })
                     }

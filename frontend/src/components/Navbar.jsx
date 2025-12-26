@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import Login from './Login';
+import {ToastContainer} from 'react-toastify'
+import { useAuth } from '../context/AuthProvider';
+import Logout from './Logout';
 
 const Navbar = () => {
+    const [authUser, setAuthUser]=useAuth();
     const [sticky, setSticky] = useState(false);
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
     useEffect(()=>{
@@ -108,11 +112,23 @@ const Navbar = () => {
                     </label>
                 </div>
                 <div className="">
-                    <button className="btn dark:hover:bg-slate-600 duration-300 dark:bg-gray-400 dark:text-black" onClick={()=>document.getElementById('my_modal_1').showModal()}>Login</button>
-                    <Login/>
+                    {
+                        authUser ? (
+                                <Logout/>
+                        ) : (
+                            <>
+                                                        
+                                                        <button className="btn dark:hover:bg-slate-600 duration-300 dark:bg-gray-400 dark:text-black" onClick={()=>document.getElementById('my_modal_1').showModal()}>Login</button>
+                            <Login/>
+                            </>
+                        )
+                    }
                 </div>
             </div>
+            <p className='text-xl'>{authUser?.name
+                }</p>
         </div>
+        <ToastContainer/>
 </div>
     </>
   )
